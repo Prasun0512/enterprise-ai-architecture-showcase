@@ -24,8 +24,10 @@ adrs/                       Architecture decision records
 hld/                        High-level architecture documents
 lld/                        Low-level implementation designs
 diagrams/                   Mermaid architecture and sequence diagrams
+system-design/              Detailed platform design documents
 patterns/                   Reusable enterprise AI patterns
 security/                   AI security and governance controls
+observability/              OpenTelemetry, monitoring, and failure-analysis patterns
 operations/                 Monitoring, cost, release, and runbook notes
 ```
 
@@ -56,6 +58,7 @@ flowchart TB
 | Event-Driven AI | Email-to-case sequence, queueing, retries, dead-letter handling |
 | Governance | PII controls, audit trail, role-aware access, AI security notes |
 | Operations | Monitoring, release checklist, cost optimization, scalability notes |
+| Observability | OpenTelemetry, Application Insights, structured logging, failure analysis |
 
 ## How To Use This Repo
 
