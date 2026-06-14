@@ -1,0 +1,20 @@
+name: Validate Architecture Docs
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required architecture sections
+        run: |
+          test -f README.md
+          test -f adrs/ADR-001-agent-orchestration-with-langgraph.md
+          test -f hld/enterprise-rag-platform.md
+          test -f hld/agentic-ai-workflow-platform.md
+          test -f security/ai-security-controls.md
+          test -f operations/production-readiness-checklist.md
